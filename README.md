@@ -182,9 +182,3 @@ INFO - Execução finalizada
 ```
 
 ---
-
-## Autora
-
-**Raquel Andrade**
-
-Projeto desenvolvido como atividade prática de Hyperautomation utilizando o ecossistema BotCity.
