@@ -22,7 +22,7 @@ O projeto simula um cenário corporativo de validação de usuários, processame
 
 ```text
 auditor_acessos_bot/
-├── .env.example              # modelo de variáveis de ambiente
+├── .env                      # variáveis de ambiente e configurações do bot
 ├── config.py                 # configuração central do projeto
 ├── logger.py                 # logging em arquivo e console
 ├── maestro_client.py         # integração com BotCity Maestro/Vault
@@ -48,13 +48,16 @@ pip install -r requirements.txt
 
 ### 2. Configurar ambiente
 
-Crie o arquivo `.env` baseado no modelo:
+Configure o arquivo `.env` com as variáveis necessárias para execução do bot.
 
-```bash
-cp .env.example .env
+Exemplo de configuração offline:
+
+```env
+MAESTRO_ENABLED=false
+VAULT_ENABLED=false
 ```
 
-Configure as variáveis do Maestro quando desejar executar a integração real.
+Para executar integrado ao BotCity Maestro, preencha também as configurações do servidor, login e chave de acesso.
 
 ---
 
